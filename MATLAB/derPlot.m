@@ -18,20 +18,20 @@ y = @(x) sin(1 ./(x .*(2-x))).^2;
 figure
 subplot(2,2,1)
 plot(x,y(x))
-legend('y(x)','location','best')
+legend('y(x)','location','southoutside')
 
 subplot(2,2,2)
 plot(dxc,dyc,dxf,dyf,dxb,dyb)
-legend('central','forward','backward')
+legend('central','forward','backward','location','southoutside')
 title('Comparison of 1st derivatives')
 
 subplot(2,2,3)
 plot(dxc2,dyc2,dxf2,dyf2,dxb2,dyb2)
-legend('central','forward','backward')
+legend('central','forward','backward','location','southoutside')
 title('Comparison of 2nd derivatives')
 
 subplot(2,2,4)
 plot(dxc,dyc,dxc2,dyc2,dxc3,dyc3,dxc4,dyc4,dxc5,dyc5)
-legend('y''(x)','y''''(x)','y''''''(x)','y''''''''(x)','y''''''''''(x)','location','best')
+legend('y''(x)','y''''(x)','y''''''(x)','y''''''''(x)','y''''''''''(x)','location','southoutside')
 title('Upto 5th order derivatives by central differentiation')
 
