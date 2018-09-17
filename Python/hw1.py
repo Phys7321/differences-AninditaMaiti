@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[74]:
+# In[1]:
 
 
 import math as math
@@ -110,7 +110,7 @@ def backhigh(f,a,b,N):
 
 # define f(x) or y(x) and range of x
 h = lambda x: np.sin(1/(2*x - (x**2)))
-rangex = np.linspace(-2,4,num=100)
+rangex = np.linspace(-2,4,num=101)
 y = []
 for i in rangex:
     y.append(h(i))
